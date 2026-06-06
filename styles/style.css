@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Archivo-Black";
+  src:
+    url("../fonts/ArchivoBlack-Regular.woff2") format("woff2"),
+    url("../fonts/ArchivoBlack-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src:
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open-Sans-Semi-Bold";
+  src:
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Open-Sans-Bold";
+  src:
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+body {
+  min-width: 1100px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Open-Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+  background-color: #111111;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 120px 0;
+  position: relative;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title {
+  font-family: "Archivo-Black";
+  font-size: 72px;
+  line-height: 100%;
+  margin: 0;
+}
+
+.header__subtitle {
+  opacity: 0.5;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.header__description {
+  margin: 30px 0;
+}
+
+.header__image {
+  width: 387px;
+  height: 500px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.header__list {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__item {
+  display: grid;
+  gap: 5px;
+}
+
+.header__link {
+  font-family: "Open-Sans-Semi-Bold";
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.header__link:hover {
+  opacity: 0.5;
+}
+
+.header__underline {
+  height: 5px;
+  background-image: linear-gradient(to right, #1a971a, #00ff7b);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.circle {
+  width: 300px;
+  aspect-ratio: 1/1;
+  background-color: #00ff7b;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(400px);
+  z-index: 0;
+}
+
+.header__circle {
+  top: 240px;
+  right: 207px;
+}
