@@ -123,3 +123,18 @@ body {
   top: 240px;
   right: 207px;
 }
+
+.skills {
+  margin: 100px 120px;
+}
+.skills__title {
+  font-family: "Archivo-Black";
+  font-size: 40px;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.skills__icons {
+  display: flex;
+  justify-content: space-between;
+}
