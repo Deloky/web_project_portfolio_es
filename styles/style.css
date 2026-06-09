@@ -44,7 +44,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 2%;
   padding: 40px 120px 0;
   position: relative;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 .header__title {
-  font-family: "Archivo-Black";
+  font-family: "Archivo-Black", Arial, sans-serif;
   font-size: 72px;
   line-height: 100%;
   margin: 0;
@@ -92,7 +92,8 @@ body {
 }
 
 .header__link {
-  font-family: "Open-Sans-Semi-Bold";
+  font-family: "Open-Sans-Semi-Bold", Arial, sans-serif;
+  line-height: 100%;
   text-decoration: none;
   color: #ffffff;
   transition: 0.3s ease;
@@ -128,13 +129,103 @@ body {
   margin: 100px 120px;
 }
 .skills__title {
-  font-family: "Archivo-Black";
+  font-family: "Archivo-Black", Arial, sans-serif;
   font-size: 40px;
   line-height: 100%;
-  margin: 0;
-  margin-bottom: 50px;
+  margin: 0 0 50px;
 }
 .skills__icons {
   display: flex;
   justify-content: space-between;
+}
+
+.projects {
+  margin: 0 120px;
+}
+
+.projects__title {
+  font-family: "Archivo-Black", Arial, sans-serif;
+  font-size: 40px;
+  line-height: 100%;
+  margin: 0 0 50px;
+}
+
+.projects__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 20px) / 2);
+}
+
+.projects__card-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.projects__card-text {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4%;
+  background-color: #1c1c1c;
+}
+
+.projects__card-title {
+  font-family: "Open-Sans-Bold", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 100%;
+  margin: 0 0 20px;
+}
+
+.projects__card-description {
+  margin: 0 0 30px;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-columns: repeat(2, 132px);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects__icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.projects__icon-github {
+  opacity: 0.6;
+}
+
+.projects__link {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.projects__link-text {
+  margin: auto 0;
+}
+
+.projects__link-demo {
+  color: #6d6dff;
+}
+
+.projects__link-github {
+  color: #ffffff99;
+}
+
+.projects__link:hover {
+  opacity: 0.5;
 }
