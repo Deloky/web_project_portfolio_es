@@ -4,6 +4,7 @@
     url("../fonts/ArchivoBlack-Regular.woff2") format("woff2"),
     url("../fonts/ArchivoBlack-Regular.woff") format("woff");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
     url("../fonts/OpenSans-Regular.woff2") format("woff2"),
     url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
     url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
     url("../fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
     url("../fonts/OpenSans-Bold.woff2") format("woff2"),
     url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: 700;
+  font-display: swap;
 }
 
 body {
@@ -155,7 +159,13 @@ body {
 }
 .skills__icons {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: clamp(30px, 5vw, 77px);
+}
+
+.skills__icon {
+  width: 50px;
+  object-fit: contain;
 }
 
 .projects__title {
@@ -167,14 +177,14 @@ body {
 
 .projects__cards {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .projects__card {
   display: flex;
   flex-direction: column;
-  width: calc((100% - 20px) / 2);
+  flex: 1 1 calc((100% - 20px) / 2);
 }
 
 .projects__card-image {
@@ -238,8 +248,8 @@ body {
 }
 
 .projects__list {
-  display: grid;
-  grid-template-columns: repeat(2, 132px);
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   list-style: none;
   padding: 0;
@@ -248,8 +258,6 @@ body {
 
 .projects__icon {
   width: 20px;
-  height: 20px;
-  object-fit: cover;
 }
 
 .projects__icon-github {
@@ -265,7 +273,7 @@ body {
 }
 
 .projects__link-text {
-  margin: auto 0;
+  margin: 0;
 }
 
 .projects__link-demo {
@@ -461,14 +469,8 @@ body {
     margin-bottom: 30px;
   }
 
-  .skills__icons {
-    display: grid;
-    grid-template-columns: repeat(4, 30px);
-    gap: 30px;
-  }
-
   .skills__icon {
-    width: 100%;
+    width: 30px;
   }
 
   .projects__card {
